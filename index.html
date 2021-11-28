@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Year Project - Tourism Website</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css"> 
+
+</head>
+
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>Tour</span> India</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="/Tour/book.php">book</a>
+            <a href="/Tour/Packages.php">packages</a>
+            <a href="/Tour/contact.php">contact</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" style="display: none;" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- login form container  -->
+
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="index.php" method="post">
+            <h3 class="logo"><span>Tour India</span></h3>
+            <input type="text" class="box" name="name" id="name" placeholder="Enter your name">
+            <input type="text" class="box" name="age" id="age" placeholder="Enter your Age">
+            <input type="text" class="box" name="gender" id="gender" placeholder="Enter your gender">
+            <input type="email" class="box" name="email" id="email" placeholder="Enter your email">
+            <input type="phone" class="box" name="phone" id="phone" placeholder="Enter your phone">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <!-- <p>forget password? <a href="#">click here</a></p>  -->
+            <!-- <p>don't have and account? <a href="#">register now</a></p> -->
+        </form>
+
+    </div>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>adventure is worthwhile</h3>
+            <p>Give time to live life, peace awaits</p>
+            <?php
+        if($insert == true){
+        echo "<p class='submitMsg'>Thanks for submitting your form</p>";
+        }
+    ?>
+            <!-- <a href="#" class="btn">discover more</a>  -->
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="images/vg-3.mp4"></span>
+            <span class="vid-btn" data-src="images/vg-4.mp4"></span>
+            <span class="vid-btn" data-src="images/vg-2.mp4"></span>
+            <span class="vid-btn" data-src="images/vg-1.mp4"></span>
+            <span class="vid-btn" data-src="images/vg-5.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="images/vg-3.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+    </section>
+
+    <section class="book" id="book">
+
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+
+        <div class="row">
+            <div class="igl">
+                <!-- <img src="images/flight.png" alt=""> -->
+                <div class="image">
+                    <img src="images/tvg-1.jpg" alt="">
+                </div>
+            </div>
+
+            <form action="">
+                <div class="inputBox" >
+                    <h3>From to</h3>
+                    <input type="text"name="place1" id="place1" placeholder="location">
+                </div>
+                <div class="inputBox">
+                    <h3>Destination</h3>
+                    <input type="text"name="place2" id="place2" placeholder="Destination">
+                </div>
+                <div class="inputBox" >
+                    <h3>how many</h3>
+                    <input type="number"name="num" id="num" placeholder="number of guests">
+                </div>
+                <div class="inputBox" >
+                    <h3>arrivals</h3>
+                    <input type="text" name="date1" id="date1">
+                </div>
+                <div class="inputBox" >
+                    <h3>leaving</h3>
+                    <input type="text" name="date2" id="date2">
+                </div>
+                <!-- <input type="submit" class="valid" value="book now"> -->
+                <button class="box">DO IT</button> 
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- book section ends -->
+
+    <!-- packages section starts  -->
+
+    <section class="packages" id="packages">
+
+        <h1 class="heading pipol">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/Img-ooty.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> <span>ooty</span> -tamil nadu </h3>
+                    <p> lush greenery of coffee plantations, the cascading waterfalls Irupu Falls, Madikeri Fort, Sri
+                        Omkareshwara Temple and Pushpagiri</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> ₹8,000.00 <span> ₹12,990.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/img-shimla.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> <span>shimla</span> -himachal pradesh </h3>
+                    <p>shopping at Mall Road and relishing the charm of the toy train are few of the best things to do
+                        in Shimla which are enjoyed by kids and families alike</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">₹9,600.00 <span>₹11,000.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/img-tirupati.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> <span>tirupati </span> -Andhra Pradesh </h3>
+                    <p> the city has hills and amazing views making it the perfect place for families to
+                        unwind themselves. <br><b>Sri Venkateswara Swamy Vaari Temple, Sri Venkateswara National
+                            Park</b>
+                    </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> ₹9,990.00 <span>₹10,990.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/img-maha.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i><span>Mahabaleshwar</span> -Maharashtra </h3>
+                    <p>Pratapgad Fort, Venna Lake, Elphinstone Point, Lodwick Point, Kates Point <br>
+                        A hill station in the Western Ghats, Mahabaleshwar is a great destination for families looking
+                        for long stays</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> ₹7,100.00 <span>₹9,990.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/img-temple.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i><span>Amritsar</span> -Punjab</h3>
+                    <p>Jallianwala Bagh, Partition Museum, Akal Takht, Central Sikh Museum, <b>Golden Temple</b> </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> ₹8,000.00 <span> ₹12,990.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/img-manali.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> <span>Manali</span> -Himachal Pradesh</h3>
+                    <p> Solang Valley is one major attraction where one can indulge in adventure sports. Try parasailing
+                        on your next visit to Manali. One can book a stay at Mall Road there for an easier commute to
+                        the attraction points in the city</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> ₹8,000.00 <span> ₹12,990.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- packages section ends -->
+
+    <!-- services section starts  -->
+
+    <section class="services" id="services">
+
+        <h1 class="heading pipol">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>affordable hotels</h3>
+                <p></p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>food and drinks</h3>
+                <p></p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>safty guide</h3>
+                <p></p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>around the world</h3>
+                <p></p>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>fastest travel</h3>
+                <p></p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>adventures</h3>
+                <p></p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- services section ends -->
+
+    <!-- gallery section starts  -->
+
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading pipol">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/img-manali.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p></p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/Img-ooty.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p></p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/Img-ooty.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p></p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img-shimla.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p></p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img-temple.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p></p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/img-tirupati.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p></p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-1.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p></p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-8.jpg" alt="">
+                <div class="content">
+                    <h3>amazing places</h3>
+                    <p></p>
+                    <a href="#" class="btn">see more</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- gallery section ends -->
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading" id="pipo">
+            <span class="pip">r</span>
+            <span class="pip">e</span>
+            <span class="pip">v</span>
+            <span class="pip">i</span>
+            <span class="pip">e</span>
+            <span class="pip">w</span>
+        </h1>
+
+        <div class="swiper-container review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <h3>Heena</h3>
+                        <p></p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <h3>Bhushan Lokande</h3>
+                        <p></p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <h3>Aditya karle</h3>
+                        <p></p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <h3>Krupa Patel</h3>
+                        <p></p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <h3>shardul Govekar</h3>
+                        <p></p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <h3>Samarth Satpute</h3>
+                        <p></p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading pipol">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/contact-img.svg" alt="">
+            </div>
+
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="number">
+                    <input type="text" placeholder="subject">
+                </div>
+                <textarea placeholder="message" name="" id="name" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn sbt" value="send message">
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
