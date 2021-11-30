@@ -1,0 +1,13 @@
+.razorpay-payment-button.svelte-ohbfj8 {
+    position: relative;
+    display: inline-block;
+    margin: 15px 50px;
+    -webkit-font-smoothing: antialiased;
+}
+.PaymentButton--dark.svelte-ekc7fv.svelte-ekc7fv {
+    color: #000;
+}
+
+.razorpay-payment-button svelte-ohbfj8{
+    background: rgb(40 243 93);
+}
