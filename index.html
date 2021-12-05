@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="button.css"> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="button.css">
 
 </head>
 
@@ -30,9 +30,9 @@
 
         <nav class="navbar">
             <a href="#home">home</a>
-            <a href="book.php">book</a>
-            <a href="Packages.php">packages</a>
-            <a href="contact.php">contact</a>
+            <a href="/book.html">book</a>
+            <a href="/packages.html">packages</a>
+            <a href="/contact.html">contact</a>
         </nav>
 
         <div class="icons">
@@ -117,28 +117,28 @@
             </div>
 
             <form action="">
-                <div class="inputBox" >
+                <div class="inputBox">
                     <h3>From to</h3>
-                    <input type="text"name="place1" id="place1" placeholder="location">
+                    <input type="text" name="place1" id="place1" placeholder="location">
                 </div>
                 <div class="inputBox">
                     <h3>Destination</h3>
-                    <input type="text"name="place2" id="place2" placeholder="Destination">
+                    <input type="text" name="place2" id="place2" placeholder="Destination">
                 </div>
-                <div class="inputBox" >
+                <div class="inputBox">
                     <h3>how many</h3>
-                    <input type="number"name="num" id="num" placeholder="number of guests">
+                    <input type="number" name="num" id="num" placeholder="number of guests">
                 </div>
-                <div class="inputBox" >
+                <div class="inputBox">
                     <h3>arrivals</h3>
                     <input type="text" name="date1" id="date1">
                 </div>
-                <div class="inputBox" >
+                <div class="inputBox">
                     <h3>leaving</h3>
                     <input type="text" name="date2" id="date2">
                 </div>
-                <!-- <input type="submit" class="valid" value="book now"> -->
-                <button class="box">DO IT</button> 
+                <input type="submit" class="valid" value="book now">
+                <!-- <button class="box">DO IT</button> -->
             </form>
 
         </div>
@@ -178,7 +178,12 @@
                         <i class="far fa-star"></i>
                     </div>
                     <div class="price">₹8000 <span>₹11,000.00</span> </div>
-                    <a href="" class="updated" ><form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_IRxN4yr6Dgx5Nn" async></script> </form></a>
+                    <a href="" class="updated">
+                        <form>
+                            <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                data-payment_button_id="pl_IRxN4yr6Dgx5Nn" async></script>
+                        </form>
+                    </a>
                 </div>
             </div>
 
@@ -196,7 +201,12 @@
                         <i class="far fa-star"></i>
                     </div>
                     <div class="price">₹9600.00 <span>₹11,000.00</span> </div>
-                    <a href="#" class="updated-1"><form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_IRxkn0PLloJXUW" async> </script> </form></a>
+                    <a href="#" class="updated-1">
+                        <form>
+                            <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                data-payment_button_id="pl_IRxkn0PLloJXUW" async> </script>
+                        </form>
+                    </a>
                 </div>
             </div>
 
@@ -216,7 +226,13 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <div class="price"> ₹9000.00 <span>₹11,990.00</span> </div>
-                    <a href="#" class="updated-2"><form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_IRxq7F8PbGArB5" style="background-color: #00bcd4;" async> </script> </form></a>
+                    <a href="#" class="updated-2">
+                        <form>
+                            <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                data-payment_button_id="pl_IRxq7F8PbGArB5" style="background-color: #00bcd4;"
+                                async> </script>
+                        </form>
+                    </a>
                 </div>
             </div>
 
@@ -360,7 +376,7 @@
                 </div>
             </div>
             <div class="box">
-                <img src="images/img-ooty.jpg" alt="">
+                <img src="images/Img-ooty.jpg" alt="">
                 <div class="content">
                     <h3>amazing places</h3>
                     <p></p>
@@ -543,6 +559,20 @@
         <div class="row">
 
             <div class="image">
+                <!-- <div id="googleMap" style="width:600px;height:400px; margin-left: 3px; display: block;"></div>
+
+                <script>
+                    function myMap() {
+                        var mapProp = {
+                            center: new google.maps.LatLng(51.508742, -0.120850),
+                            zoom: 5,
+                        };
+                        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                    }
+                </script>
+
+                <script
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT42QmWnJgXvLeQ4-F0wC51aCQnQdqqT0&callback=myMap"></script> -->
                 <img src="images/contact-img.svg" alt="">
             </div>
 
