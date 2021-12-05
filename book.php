@@ -25,10 +25,10 @@
         <a href="#" class="logo"><span>Tour</span> India</a>
 
         <nav class="navbar">
-            <a href="/Tour/index.php">home</a>
-            <a href="/Tour/book.php">book</a>
-            <a href="/Tour/Packages.php">packages</a>
-            <a href="/Tour/contact.php">contact</a>
+            <a href="/index.html">home</a>
+            <a href="#">book</a>
+            <a href="/packages.html">packages</a>
+            <a href="/contact.html">contact</a>
         </nav>
 
         <div class="icons">
@@ -58,19 +58,6 @@
         </form>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

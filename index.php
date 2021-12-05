@@ -63,7 +63,7 @@ if (isset($_POST['name'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- custom css file link  -->
-    <!-- <link rel="stylesheet" href="style.css">  -->
+    <link rel="stylesheet" href="style.css"> 
 
 </head>
 <style>
@@ -914,13 +914,13 @@ if (isset($_POST['name'])) {
                     <h3>how many</h3>
                     <input type="number"name="num" id="num" placeholder="number of guests">
                 </div>
-                <div class="inputBox" >
-                    <h3>arrivals</h3>
-                    <input type="text" name="date1" id="date1">
+                <div class="inputBox">
+                    <h3>Start</h3>
+                    <input type="date" name="date1" id="date1">
                 </div>
                 <div class="inputBox" >
-                    <h3>leaving</h3>
-                    <input type="text" name="date2" id="date2">
+                    <h3>End</h3>
+                    <input type="date" name="date2" id="date2">
                 </div>
                 <!-- <input type="submit" class="valid" value="book now"> -->
                 <button class="box">DO IT</button> 
